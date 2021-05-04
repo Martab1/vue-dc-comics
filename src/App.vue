@@ -6,9 +6,11 @@
 
       <!-- main -->
       <Main/>
-
+      <Services/>
+      
       <!-- footer -->
-      <footer>footer</footer>
+      <Footer/>
+      <Subfooter/>
     </section>
     
     
@@ -19,6 +21,9 @@
 // importazione componente
 import Header from '@/components/Header.vue'
 import Main from '@/components/Main.vue'
+import Services from '@/components/Services.vue'
+import Footer from '@/components/Footer.vue'
+import Subfooter from '@/components/Subfooter.vue'
 
 
 export default {
@@ -27,6 +32,9 @@ export default {
   components: {
      Header,
      Main,
+     Services,
+     Footer,
+     Subfooter,
   }
 }
 </script>
@@ -51,6 +59,11 @@ export default {
 /* UTILITIES */
 .flex{
   display: flex;
+}
+
+.grow{
+  flex-grow: 1;
+  justify-content: flex-end;
 }
 
 

@@ -20,12 +20,12 @@ export default {
 
 main{
     color: #fff;
-    height: 180px;
+    height: 130px;
     background: rgba(0, 0, 0, 0.932);
 }
 
 main div{
-    line-height:180px;
+    line-height:130px;
 }
 
 

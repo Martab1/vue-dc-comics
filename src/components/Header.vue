@@ -3,9 +3,9 @@
 
         <div class="container flex">
             
-            <img src="../assets/img/dc-logo.png" alt="">
+            <img src="../assets/img/dc-logo.png" alt="logo">
 
-            <nav class="flex">
+            <nav class="flex grow">
                 <ul class="flex" >
                     <li v-for= "(link,index) in links" :key="index"> 
                     <a href="#">{{ link.text }}</a></li>
@@ -51,10 +51,6 @@ img{
 }
 
 /* NAV */
-nav{
-    flex-grow: 1;
-    justify-content: flex-end;
-}
 
 li{
    padding: 45px 16px;
