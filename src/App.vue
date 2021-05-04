@@ -28,6 +28,29 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style>
+
+/* GENERAL */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+
+/* UTILITIES */
+.flex{
+  display: flex;
+}
+
+
+
 
 </style>
