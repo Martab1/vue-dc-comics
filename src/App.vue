@@ -5,7 +5,7 @@
       <Header/>
 
       <!-- main -->
-      <main>main</main>
+      <Main/>
 
       <!-- footer -->
       <footer>footer</footer>
@@ -16,14 +16,17 @@
 </template>
 
 <script>
-// importazione
+// importazione componente
 import Header from '@/components/Header.vue'
+import Main from '@/components/Main.vue'
+
 
 export default {
   name: 'App',
+  // oggetto componenti
   components: {
-    // oggetto component
      Header,
+     Main,
   }
 }
 </script>
