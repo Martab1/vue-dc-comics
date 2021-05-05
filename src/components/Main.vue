@@ -1,9 +1,6 @@
 <template>
-    <main>
-        <section class="container">
-            <div> <i class="fas fa-arrow-right"></i> CONTENT GOES HERE <i class="fas fa-arrow-left"></i> </div>
-        </section>
-    </main>
+
+    <main></main>
   
 </template>
 
@@ -19,15 +16,9 @@ export default {
 <style scoped>
 
 main{
-    color: #fff;
-    height: 130px;
-    background: rgba(0, 0, 0, 0.932);
+    height: 350px;
+    background-image: url(../assets/img/jumbotron.jpg);
+    background-size: cover;
 }
-
-main div{
-    line-height:130px;
-}
-
-
 
 </style>
