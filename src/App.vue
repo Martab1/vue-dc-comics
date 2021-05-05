@@ -5,7 +5,7 @@
       <Header/>
 
       <!-- main -->
-      <Main/>
+      <Jumbotron/>
       <CurrentSeries/>
       <Services/>
       
@@ -21,7 +21,7 @@
 <script>
 // importazione componente
 import Header from '@/components/Header.vue'
-import Main from '@/components/Main.vue'
+import Jumbotron from '@/components/Jumbotron.vue'
 import CurrentSeries from '@/components/CurrentSeries.vue'
 import Services from '@/components/Services.vue'
 import Footer from '@/components/Footer.vue'
@@ -33,7 +33,7 @@ export default {
   // oggetto componenti
   components: {
      Header,
-     Main,
+     Jumbotron,
      CurrentSeries,
      Services,
      Footer,
@@ -42,32 +42,12 @@ export default {
 }
 </script>
 
-<style>
-
-/* GENERAL */
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container{
-  max-width: 1200px;
-  margin: 0 auto;
-  font-family: 'Fira Sans Condensed', sans-serif;
-}
+<style lang="scss">
+// importo stili  @import / @use
+@import "./style/general";
+@import "./style/utilities";
 
 
-/* UTILITIES */
-.flex{
-  display: flex;
-}
-
-.grow{
-  flex-grow: 1;
-  justify-content: flex-end;
-}
 
 
 

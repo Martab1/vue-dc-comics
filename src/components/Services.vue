@@ -19,41 +19,38 @@
 
 <script>
 export default {
+    //nome componente
     name:"Services",
 
 }
 </script>
 
 
-<style scoped>
+<style scoped lang="scss">
+@import "../style/vars.scss";
 
 section{
-    background: rgb(34, 110, 211);
+    background: $primary;
 }
+
 
 ul{
     display: flex;
     justify-content: center;
     list-style: none;
-}
+} li {
+     padding: 60px 0 ;
 
-li{
-    padding: 60px 0 ;
+    } a:last-child{
+        margin-left: 12px;
+        margin-right: 60px;
+        text-decoration: none;
+        text-transform: $textTrasform;
+        font-size: 14px;
+        color: $secondary;
+        line-height: 50px; 
     }
     
-
-li a:last-child{
-    margin-left: 12px;
-    margin-right: 60px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #fff;
-    line-height: 50px;  
-    
-    }
-
-
 img{
     max-width: 45px;
     max-height: 45px;

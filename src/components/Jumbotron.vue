@@ -1,6 +1,6 @@
 <template>
 
-    <main></main>
+    <div></div>
   
 </template>
 
@@ -8,14 +8,14 @@
 
 export default {
     // Nome componente
-    name: "Main",
+    name: "Jumbotron",
 
 }
 </script>
 
 <style scoped>
 
-main{
+div{
     height: 350px;
     background-image: url(../assets/img/jumbotron.jpg);
     background-size: cover;

@@ -2,47 +2,42 @@
     <header>
 
         <div class="container flex">
-            
+            <!-- logo -->
             <img src="../assets/img/dc-logo.png" alt="logo">
 
+             <!-- links  -->
             <nav class="flex grow">
                 <ul class="flex" >
-                    <li v-for= "(link,index) in links" :key="index"> 
-                    <a href="#">{{ link.text }}</a></li>
+                    <li v-for= "(link,index) in links" :key= "index"> 
+                    <a :class= "{ active: link.current }" :href="link.url">{{ link.text }}</a></li>
                 </ul>
             </nav>
-       
         </div>
+
     </header>
   
 </template>
 
 
 <script>
+// importo data
+import headerLinks from "@/data/headerLinks.js";
+
 export default {
     // nome componente
     name: "Header",
     data() {
        return {
-           links: [
-               { text: "characters", url: "/characters", current: false},
-               { text: "comics", url: "/comics", current: true},
-               { text: "movies", url: "/movies", current: false},
-               { text: "tv", url: "/tv", current: false},
-               { text: "games", url: "/games", current: false},
-               { text: "collectilbles", url: "/collectibles", current: false},
-               { text: "videos", url: "/videos", current: false},
-               { text: "fans", url: "/fans", current: false},
-               { text: "news", url: "/news", current: false},
-               { text: "shop", url: "/shop", current: false},
-           ],
+           links: headerLinks,
        }
     }
 }
 </script>
 
 
-<style scoped>
+<style scoped lang="scss">
+// importo variabili di stile
+@import "../style/vars.scss";
 
 /* LOGO */
 img{
@@ -51,23 +46,21 @@ img{
 }
 
 /* NAV */
-
-li{
-   padding: 45px 16px;
-   list-style: none;
-}
-
-li a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
-    color: rgb(58, 57, 57);  
-    transition: color .3s; 
-}
-
-li a:hover{
-    color: rgb(66, 104, 206);
+li { 
+    padding: 45px 16px;
+    list-style: none;
+    a{
+        text-decoration: none;
+        text-transform: $textTrasform;
+        font-size: $font;
+        font-weight: bold;
+        color: rgb(58, 57, 57);  
+        transition: color .3s; 
+        &.active,
+        &:hover{
+            color: $primary;
+        }
+    }
 }
 
 

@@ -1,6 +1,8 @@
 <template>
      <section>
          <div class="container flex">
+
+             <!-- dc comics & shop -->
              <div>
                 <ul>
                     <h3> dc comics</h3>
@@ -14,18 +16,21 @@
                 </ul>
              </div>   
 
+             <!-- dc -->
              <ul>
                  <h3>dc</h3>
                  <li v-for= "(item,index) in dc" :key= "index"><a href="#">{{ item.text }}</a></li>
              </ul>
              
+             <!-- sites -->
              <ul>
                  <h3>sites</h3>
                  <li v-for= "(item,index) in sites" :key= "index" ><a href="#">{{ item.text }}</a></li>       
              </ul>
              
-         </div>
+        </div>
 
+         <!-- logo bg -->
          <div class="box">
             <img src="../assets/img/dc-logo-bg.png" alt="logo-bg">
          </div>
@@ -77,7 +82,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+// importo variabili di stile
+@import "../style/vars.scss";
 
 section{
     position: relative;
@@ -94,39 +101,33 @@ section{
 ul{
     list-style: none;
      padding: 20px;   
-}
+} h3 {
+    margin-bottom: 5px;
+    color: $secondary;
+    text-transform: $textTrasform;
+} a{
+    color: $footerLink;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: $font;
+    transition: .3s;
+    &:hover{
+        color:$secondary;
+    }
+} 
 
-h3{
-    margin-bottom: 10px;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-a{
-  color: rgb(170, 169, 169);
-  text-decoration: none;
-  text-transform: capitalize;
-  font-size: 11px;
-  transition: .3s;
-}
-
-a:hover{
-    color:#fff;
-}
 
 /* LOGO BG */
 
 .box{
     width: 530px;
-    height: 435px;
+    height: 425px;
     overflow: hidden;
     position: absolute;
     top: 0;
     left: 50%;
   
-}
-
-img{
+} img {
       width: 530px; 
 }
 

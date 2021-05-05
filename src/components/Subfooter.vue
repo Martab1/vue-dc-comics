@@ -3,9 +3,11 @@
         <!-- footer -->
         <div class="footer">
 
+            <!-- button sign-up -->
             <div class=" container flex">
                 <button>sign-up now!</button>
 
+               <!-- social -->
                 <div class="flex grow">
                     <ul class="flex">
                         <h4>follow us</h4>
@@ -16,10 +18,11 @@
                         <li><a href="#"><img src="../assets/img/footer-periscope.png" alt="locator"></a></li>
                     </ul>
                 </div>
-            </div>
-        </div>    
 
-           
+            </div>
+
+        </div> 
+
     </section>
   
 </template>
@@ -31,7 +34,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../style/vars.scss";
 
 .footer{
     padding: 40px;
@@ -43,24 +47,24 @@ export default {
      cursor: pointer;
      background: transparent;
      padding: 12px;
-     border: 2px solid rgb(34, 110, 211);
-     text-transform: uppercase;
+     border: 2px solid $primary;
+     text-transform: $textTrasform;
      color: #fff;
      position: relative;
      bottom: 5px;
      transition: .4s;
+     &:hover{
+         background:#fff;
+         color: $primary;
+     }
  }
 
- button:hover{
-     background:#fff;
-     color:rgb(34, 110, 211);
- }
-
+ 
 
 /* SOCIAL */
 
 h4{
-    color:rgb(34, 110, 211);
+    color: $primary;
     text-transform: uppercase;  
     position: relative;
     top: 8px;

@@ -1,0 +1,17 @@
+
+
+/* LAYOUT */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.flex{
+    display: flex;
+  }
+
+.grow{
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
