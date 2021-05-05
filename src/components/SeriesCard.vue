@@ -1,12 +1,17 @@
 
 <!-- creazione singola card -->
 <template>
-    <div class="box">
-        <div class="img-box">
-          <img :src="obj.thumb" :alt="obj.series">
-        </div> 
-        <h4> {{ obj.series }}</h4>
-    </div>
+    <section>
+        <div class="card">
+            <div class="img-card">
+            <img :src="obj.thumb" :alt="obj.series">
+            </div> 
+            <h4> {{ obj.series }}</h4>
+
+        </div>
+    </section>
+
+    
 </template>
 
 <script>
@@ -21,26 +26,34 @@ export default {
 
 <style scoped>
 
-
-.box{
-    width: calc(90% / 6 );
-    margin: 0 auto;
+section{
+     width: calc( 100% /6);
 }
 
-.img-box{
-    height: 150px;
+.card{
+    margin: 0 auto; 
+    width: 300px;   
+} 
+
+.img-card{
+    height: 155px;
     overflow-y: hidden;    
 }
 
 img{
-    height: 210px;
+    height: 230px;
+    width:170px;
 }
 
 h4{
-    padding: 20px 0;
-    font-size: 13px;
+    margin: 20px 0;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 400;
+    display: inline-block;
+    width:60%;
 }
+
+
 
 </style>

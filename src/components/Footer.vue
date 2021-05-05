@@ -118,7 +118,7 @@ a:hover{
 
 .box{
     width: 530px;
-    height: 425px;
+    height: 435px;
     overflow: hidden;
     position: absolute;
     top: 0;

@@ -43,11 +43,11 @@ li{
     
 
 li a:last-child{
-    margin-left: 20px;
+    margin-left: 12px;
     margin-right: 60px;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
     color: #fff;
     line-height: 50px;  
     

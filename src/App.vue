@@ -55,7 +55,7 @@ export default {
 .container{
   max-width: 1200px;
   margin: 0 auto;
-  font-family: sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 

@@ -5,8 +5,13 @@
        </div>
 
        <div class="container flex images">
-            <SeriesCard v-for= "(serie,index) in cards" :key= "index" :obj= "serie" />
+            <SeriesCard v-for= "(serie,index) in cards" :key= "index" :obj= "serie" /> 
        </div>
+
+       <div class="container flex">
+            <button>load more</button>
+       </div>
+       
    </section>
 </template>
 
@@ -125,18 +130,44 @@ section{
 
 h2{
     display: inline-block;
-    padding: 15px;
+    padding: 10px 30px;
     position: relative;
     bottom: 20px;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     background: rgb(34, 110, 211);    
 }
 
  .images{
+    
     flex-wrap: wrap;
-    padding-bottom: 50px;
+    padding: 0 10px;
+    padding-bottom: 40px;
+   
     
 } 
+
+.container{
+    justify-content: center;
+}
+
+button{
+    cursor: pointer;
+    padding: 10px 60px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    background:rgb(34, 110, 211);
+    border: none;  
+    margin-bottom: 30px;   
+    transition: .4s;
+}
+
+button:hover{
+    color: rgb(34, 110, 211);
+    background: #fff;
+    
+}
+
 
 </style>
